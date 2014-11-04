@@ -3,6 +3,7 @@ var game = new Phaser.Game(800, 600, Phaser.AUTO, 'phaser-example', { preload: p
 
 function preload() {
 
+    game.time.advancedTiming = true; //for FPS
     game.load.image('barrel', 'assets/sprites/barrel.png');
     game.load.image('chunk', 'assets/sprites/chunk.png');
     game.load.image('bullets', 'assets/sprites/arrow.png');
@@ -74,6 +75,7 @@ function update() {
 
 }
 
-function render() {
-
+function render() 
+{
+    game.debug.text(game.time.fps || '--', 2, 14, "#00ff00");   
 }
