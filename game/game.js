@@ -4,9 +4,9 @@ var game = new Phaser.Game(800, 600, Phaser.AUTO, 'phaser-example', { preload: p
 function preload() {
 
     game.time.advancedTiming = true; //for FPS
-    game.load.image('barrel', 'assets/sprites/barrel.png');
-    game.load.image('chunk', 'assets/sprites/chunk.png');
-    game.load.image('bullets', 'assets/sprites/arrow.png');
+    game.load.image('barrel', 'game/assets/sprites/barrel.png');
+    game.load.image('chunk', 'game/assets/sprites/chunk.png');
+    game.load.image('bullets', 'game/assets/sprites/arrow.png');
 
 }
 
